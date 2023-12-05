@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html , body{
+    height: 100%;
+    width: 100%;
+    font-family: 'Roboto';
+}
+
+h1{
+  margin-left: 10px;
+  padding-top: 10px;
+  text-align: center;
+}
+
+.page1{
+  width: 100%;
+  height: 100%;
+  background-color: cadetblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.page2{
+  width: 100%;
+  height: 100%;
+  background-color: rgb(224, 85, 85);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.page3{
+  width: 100%;
+  height: 100%;
+  background-color: rgb(63, 113, 219);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box{
+  width:250px;
+  height: 250px;
+  background-color: teal;
+}
