@@ -1,0 +1,58 @@
+@font-face {
+  font-family: head;
+  src: url(./Heading-Now-Variable.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Roboto;
+}
+html , body{
+    height: 100%;
+    width: 100%;
+}
+
+.page1{
+height: 100vh;
+width:100%;
+background-color: black;
+overflow: hidden;
+}
+.page1 h1{
+  color: white;
+  font-size: 40vw;
+  text-transform: uppercase;
+  font-family: head;
+  white-space: nowrap;
+  font-stretch: 250%;
+  font-weight: 900;
+}
+.page2{
+  height: 100vh;
+  width:100%;
+  background-color: rgb(29, 25, 25);
+  }
+  .page2 h1{
+    color: rgb(243, 104, 40);
+    font-size: 20vw;
+    text-transform: uppercase;
+    font-family: head;
+    white-space: nowrap;
+    font-stretch: 250%;
+    font-weight: 900;
+  }
+  .page3{
+    height: 100vh;
+    width:100%;
+    background-color: black;
+    }
+    .page3 h1{
+      color: rgb(84, 141, 207);
+      font-size: 20vw;
+      text-transform: uppercase;
+      font-family: head;
+      white-space: nowrap;
+      font-stretch: 250%;
+      font-weight: 900;
+    }
