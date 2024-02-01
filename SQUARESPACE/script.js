@@ -31,6 +31,6 @@ timeline.to("h5", {
   y: 30,
   opacity: 0,
   repeat: -1,
-  duration: 0.5,
+  duration: 1,
   yoyo: true,
 })
