@@ -47,20 +47,18 @@ ul i {
 .center {
   /* background-color: red; */
   width: 100%;
-  padding-top: 40px;
-  padding-left: 40px;
-  padding-right: 40px;
-  padding-bottom: 0;
+  padding: 40px 80px;
 }
 
 .center h1 {
-  font-size: 4rem;
+  /* font-size: 4rem; */
+  font-size: 4.5vw;
   font-weight: 300;
-  line-height: 4rem;
+  line-height: 5vw;
 }
 .center-in {
   /* background-color: blue; */
-  height: 200px;
+  min-height: 150px;
   display: flex;
   justify-content: space-between;
   margin-top: 40px;
@@ -68,7 +66,7 @@ ul i {
 }
 
 .center-in p {
-  line-height: 30px;
+  line-height: 2.2vw;
   font-weight: thin;
 }
 
@@ -108,9 +106,38 @@ ul i {
 
 .bottom {
   background-color: red;
-  height: 36%;
+  height: 50%;
   width: 100%;
   background-image: url("https://images.pexels.com/photos/906002/pexels-photo-906002.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
   background-size: cover;
-  background-position: 0 25%;
+  background-position: 0 20%;
+}
+
+@media (max-width: 600px) {
+  nav li {
+    display: none;
+  }
+  .center {
+    padding: 10px 30px;
+  }
+  .center h1 {
+    font-size: 8vw;
+    font-weight: 300;
+    line-height: 7vw;
+    text-align: center;
+  }
+  .center-in {
+    flex-direction: column;
+    align-items: center;
+  }
+  .center-in p {
+    line-height: 4.5vw;
+  }
+  .right {
+    padding-top: 10px;
+    width: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+  }
 }
