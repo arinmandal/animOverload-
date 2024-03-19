@@ -5,3 +5,5 @@
 
 - Project 2 ~ Shop Jacket
   ![alt text](image.png)
+- Project 3 ~ Francesco Gioia
+  ![alt text](image-1.png)  
