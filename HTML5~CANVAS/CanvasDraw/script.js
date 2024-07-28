@@ -1,7 +1,7 @@
 let canvas = document.querySelector('canvas');
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
-canvas.style.backgroundColor = 'skyblue';
+canvas.style.backgroundColor = 'white';
 
 let c = canvas.getContext('2d');
 
@@ -10,7 +10,7 @@ let c = canvas.getContext('2d');
 for (let i = 0; i < 100; i++){
   let x = Math.random() * innerWidth;
   let y = Math.random() * innerWidth;
-  c.fillStyle= `hsl(${Math.random() * 360}, 50%, 50%)`;
+  c.fillStyle= `hsl(${Math.random() * 360}, 100%, 50%)`;
   c.fillRect(x, y, 50, 50);
   
 }
@@ -20,7 +20,7 @@ for (let i = 0; i < 20; i++){
   let x = Math.random() * innerWidth;
   let y = Math.random() * innerHeight;
   let radius = Math.random() * 30 + 30;
-  let color = `hsl(${Math.random() * 360}, 50%, 50%)`;
+  let color = `hsl(${Math.random() * 360}, 100%, 50%)`;
 
   c.beginPath();
   c.arc(x, y, radius, 0, Math.PI * 2);
