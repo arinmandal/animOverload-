@@ -57,7 +57,7 @@ c.stroke();
 for (let i = 0; i < 20; i++){
   let x = Math.random() * innerWidth;
   let y = Math.random() * innerHeight;
-  let radius = Math.random() * 50 + 50;
+  let radius = Math.random() * 30 + 30;
   let color = `hsl(${Math.random() * 360}, 50%, 50%)`;
 
   c.beginPath();
