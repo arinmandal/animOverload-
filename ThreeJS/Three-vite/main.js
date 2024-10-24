@@ -15,26 +15,30 @@ const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerH
 // const sphere = new THREE.Mesh(geometry, material);
 // scene.add(sphere);
 // camera.position.z = 5;
-// Directional Light
-const directionalLight = new THREE.DirectionalLight(0xffffff, 1);
-directionalLight.position.set(1, 1, 1); // Position the light to the right and above
+
+// lights
+const Ambientlights = new THREE.AmbientLight("White", 1);
+scene.add(Ambientlights);
+
+// Direction Light
+
+const directionalLight = new THREE.DirectionalLight("red", 3);
+directionalLight.position.set(2, 2, 2);
 scene.add(directionalLight);
 
-// Ambient Light 
-const ambientLight = new THREE.AmbientLight(0xffffff, 0.5); // Soft overall illumination
-scene.add(ambientLight);
+const helper = new THREE.DirectionalLightHelper( directionalLight, 15 );
+scene.add( helper );
+// Point Light
 
-// Studio Lighting Setup
-const light1 = new THREE.DirectionalLight(0xffffff, 1);
-light1.position.set(1, 2, 3); // Position light to the right and above
-scene.add(light1);
+const pointLight = new THREE.PointLight("yellow", 1, 10);
+pointLight.position.set(1, -1.34, 1);
+scene.add(pointLight);
 
-const light2 = new THREE.DirectionalLight(0xffffff, 1);
-light2.position.set(-1, 2, -3); // Position light to the left and behind
-scene.add(light2);
+const sphereSize = 1;
+const pointLightHelper = new THREE.PointLightHelper( pointLight, sphereSize );
+scene.add(pointLightHelper);
 
-const light3 = new THREE.AmbientLight(0xffffff, 0.5); // Soft ambient light
-scene.add(light3);
+
 
 // Texture
 let loader = new THREE.TextureLoader();
@@ -45,7 +49,7 @@ let height = loader.load("./paperbox/height.jpg");
 
 // how to add texture to scene
 const geometry = new THREE.BoxGeometry(2, 1, 2);
-const material = new THREE.MeshStandardMaterial({ map: color, roughness: roughness,metalness:0.2, normalMap: normal });
+const material = new THREE.MeshStandardMaterial({ map: color, roughness: roughness, metalness: 0.2, normalMap: normal });
 const cube = new THREE.Mesh(geometry, material);
 scene.add(cube);
 camera.position.z = 5;
