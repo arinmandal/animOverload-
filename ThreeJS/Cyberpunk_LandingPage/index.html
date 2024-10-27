@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cyberpunk</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div class="main w-full font-['JetBrains Mono']">
+      <nav class="fixed w-full top-0 left-0 bg-black py-3 px-10">
+        <div class="flex items-center justify-between">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Cyberpunk_2077_logo.svg/695px-Cyberpunk_2077_logo.svg.png?20210602131716"
+            alt="Cyberpunk Logo"
+            class="w-[160px] h-auto"
+          />
+          <ul class="flex space-x-8 font-bold">
+            <li>
+              <a href="#" class="text-white hover:text-yellow-300">Games</a>
+            </li>
+            <li>
+              <a href="#" class="text-white hover:text-yellow-300">News</a>
+            </li>
+            <li>
+              <a href="#" class="text-white hover:text-yellow-300">Community</a>
+            </li>
+            <li>
+              <a href="#" class="text-white hover:text-yellow-300">Sports</a>
+            </li>
+            <li>
+              <a href="#" class="text-white hover:text-yellow-300">Supports</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="w-full hscreen overflow-hidden">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Cyberpunk_2077_logo.svg/695px-Cyberpunk_2077_logo.svg.png?20210602131716"
+          alt=""
+          class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+        />
+        <canvas id="draw"></canvas>
+      </div>
+      <div class="w-full h-screen bg-zinc-500"></div>
+    </div>
+
+    <script type="module" src="main.js"></script>
+  </body>
+</html>
