@@ -1,6 +1,7 @@
 import React from 'react'
 import { motion } from "motion/react"
 import './App.css'
+import MotionDiv from './MotionDiv'
 const App = () => {
   return (
     <>
@@ -14,7 +15,7 @@ const App = () => {
         }}
         src="https://pngimg.com/d/tom_and_jerry_PNG29.png" alt="" /> */}
 
-      <motion.div
+      {/* <motion.div
         initial={{ x: 0, y: 0 }}
         animate={{
           x: [0, 700, 700, 0, 0],
@@ -28,7 +29,8 @@ const App = () => {
         }}
         className="box">
 
-      </motion.div>
+      </motion.div> */}
+      <MotionDiv />
     </>
   )
 }
