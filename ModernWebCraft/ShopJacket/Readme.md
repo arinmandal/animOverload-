@@ -1,3 +1,14 @@
-Preview
+# Shop Jacket  
+E-commerce jacket store landing page.
 
-![alt text](image-1.png)
+## 🚀 Preview
+
+![Shop Jacket](./ShopJacket.png)
+
+---
+
+## 🛠 Tech Stack
+
+- **HTML5**
+- **CSS3**
+---
