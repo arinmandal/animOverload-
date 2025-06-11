@@ -23,8 +23,8 @@ E-commerce jacket store landing page.
 ### 🎩 Francesco Gioia  
 A bold, editorial-style portfolio website designed for a street and fashion photographer.
 
-🔗 [View Project](./Francesco%20Gioia/)  
-![Francesco Gioia](./Francesco%20Gioia/Francesco-ss.png)
+🔗 [View Project](./Francesco-Gioia/)  
+![Francesco Gioia](./Francesco-Gioia/Francesco-ss.png)
 
 ---
 
