@@ -22,15 +22,3 @@ timeline.from("main > img", {
   opacity: 0,
   stagger: 0.3,
 })
-
-timeline.from("h5", {
-  scale: 0,
-  opacity: 0,
-})
-timeline.to("h5", {
-  y: 30,
-  opacity: 0,
-  repeat: -1,
-  duration: 1,
-  yoyo: true,
-})
